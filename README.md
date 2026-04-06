@@ -1,4 +1,4 @@
-## Nuxt setup without Content and Nuxt UI 
+## Nuxt setup without Content and Nuxt UI
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
