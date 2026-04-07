@@ -1,0 +1,14 @@
+<script lang="ts" setup>
+const props = defineProps<{
+  size: number | string
+}>()
+</script>
+
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" :width="props.size" :height="props.size" viewBox="0 0 24 24">
+    <path
+      fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M5 17h14M5 12h14M5 7h14"
+    />
+  </svg>
+</template>
