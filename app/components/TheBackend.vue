@@ -44,7 +44,7 @@ const skillCategories: Readonly<SkillCategory[]> = [
   {
     label: 'ORM / ODM',
     items: [
-      { id: 1, title: 'Drizzle', icon: 'https://img.logokit.com/drizzle.team', isImage: true },
+      { id: 1, title: 'Drizzle', icon: 'lineicons:drizzle' },
       { id: 2, title: 'Prisma', icon: 'logos:prisma' },
       { id: 3, title: 'Mongoose', icon: 'logos:mongodb-icon' },
     ],
