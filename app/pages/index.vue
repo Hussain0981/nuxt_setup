@@ -1,53 +1,31 @@
-<script lang="ts" setup>
-const tags = ['Vue / Nuxt', 'Full Stack', 'Open Source', 'TypeScript']
-</script>
-
 <template>
-  <div class="rounded-2xl  bg-white p-8 flex flex-col gap-5">
-    <div>
-      <NuxtImg
-        src="/hussain_logo.png"
-        alt="Hussain Ullah"
-        class="h-32 w-32 rounded-2xl"
-      />
-    </div>
-
-    <div class="inline-flex w-[130px] items-center gap-2 rounded-full bg-green-50 px-3 py-1.5 text-xs font-medium text-green-800">
-      <span class="h-1.5 w-1.5 rounded-full bg-green-500" />
-      Open to work
-    </div>
-
-    <h2 class="text-3xl font-semibold text-gray-900">
-      Hussain Ullah
-    </h2>
-
-    <p class="leading-relaxed text-gray-700">
-      Hey, I'm Hussain Ullah — aka <em>Hasty</em>. Creator of the Open Source Full Stack Dashboard.
-      Currently contributing to open source full time.
-    </p>
-    <p class="leading-relaxed text-gray-700">
-      Most of my work is open source and available on
-      <NuxtLink class="text-black underline" to="https://github.com/Hussain0981">
-        <span>GitHub</span>
-      </NuxtLink>, you can also checkout my
-      <NuxtLink class="text-black underline" to="https://github.com/Hussain0981">
-        <span>recent comments</span>
-      </NuxtLink>.
-    </p>
-    <div class="leading-relaxed text-gray-700 flex items-center gap-2">
-      I also enjoy football <IconsTheFootball size="20" /> and walking <IconsTheWalk size="25" />
-    </div>
-
+  <div class="rounded-2xl  bg-white px-3 md:p-8 flex flex-col gap-5">
+    <!-- hero section -->
+    <TheHero />
+    
+    <!-- Social Media -->
+    <TheSocialMedia />
     <hr class=" border-gray-100">
 
-    <div class="flex flex-wrap gap-2">
-      <span
-        v-for="tag in tags"
-        :key="tag"
-        class="rounded-md border border-gray-200 bg-gray-50 px-3 py-1 text-xs text-gray-500"
-      >
-        {{ tag }}
-      </span>
-    </div>
+    <!-- frontend  -->
+    <h2 class="text-xl font-semibold">
+      Frontend Skills
+    </h2>
+    <TheFrontend />
+    <hr class=" border-gray-100">
+
+    <!-- backend -->
+    <h2 class="text-xl font-semibold">
+      Backend Skills
+    </h2>
+    <TheBackend />
+    <hr class=" border-gray-100">
+
+    <!-- projects -->
+    <h2 class="text-xl font-semibold">
+      My open source Projects
+    </h2>
+    <TheProjects />
+    <hr class=" border-gray-100">
   </div>
 </template>
