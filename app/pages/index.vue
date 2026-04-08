@@ -1,11 +1,10 @@
-<script lang="ts" setup>
-const tags = ['Vue / Nuxt', 'Full Stack', 'Open Source', 'TypeScript']
-</script>
-
 <template>
-  <div class="rounded-2xl  bg-white p-8 flex flex-col gap-5">
+  <div class="rounded-2xl  bg-white px-3 md:p-8 flex flex-col gap-5">
     <!-- hero section -->
     <TheHero />
+    
+    <!-- Social Media -->
+    <TheSocialMedia />
     <hr class=" border-gray-100">
 
     <!-- frontend  -->
